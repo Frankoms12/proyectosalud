@@ -1,6 +1,6 @@
 function conn = abrirConexionPostgres()
     % Añade el driver JDBC si no está ya cargado
-    jarPath = 'C:\Users\USER\OneDrive\Documentos\MATLAB\proyectosalud\postgresql-42.6.0.jar';
+    jarPath = 'C:\Users\frank\Documents\MATLAB\proyectosalud\postgresql-42.6.0.jar';
     if ~any(strcmp(javaclasspath('-dynamic'), jarPath))
         javaaddpath(jarPath);
     end
